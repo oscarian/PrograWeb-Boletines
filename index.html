@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>HISTORIA CLINICA</h1>
+    </header>
+
+    <!--Estos son los botones para elegir entre agregar una persona y vizualizar los datos-->
+    <div class="tabs">
+            <button class="tablink" onclick="openTab('Ingreso')">Ingreso de datos</button>
+            <button class="tablink" onclick="openTab('Visualizacion')">Visualización</button>
+        
+    </div>
+
+
+
+    <!-- ******************************************************** -->
+    <!--SECCION DONDE ESTAN LOS FORMULARIOS-->
+    <!-- ******************************************************** -->
+
+
+
+    <div id="Ingreso" class="tabcontent">
+            <div class="container">
+                <!-- FORMULARIO 1-->
+                <!-- agrego los campospara ingresar personas-->
+                <div class="form1">
+                    <h2>Agregar Persona</h2> 
+                    <form id="addPersonForm">
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" id="cedula" name="cedula" required><br>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion"><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono"><br>
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+                        <label for="hora_nacimiento">Hora de Nacimiento:</label>
+                        <input type="time" id="hora_nacimiento" name="hora_nacimiento"><br>
+                        <!-- aboton para seleccionar una imagen-->
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+                        <label for="edad">Edad:</label>
+                        <span id="edad"></span><br>
+                        <button type="submit">Agregar Persona</button>
+                    </form>
+                </div>
+                <!-- agrego la imagen -->
+                <div class="form1">
+                    <h2>Imagen Previa</h2>
+                    <canvas id="canvasPreview" width="200" height="200"></canvas>
+                    <div id="mensajeError" class="error hidden"></div>
+                </div>
+            </div>
+            <div class="container">
+
+            <!-- FORMULARIO 2-->
+            <!-- agrego los campos para ingresar HIJOS-->        
+            <div class="form2">
+                <h2>Agregar Hijo</h2>
+                <form id="addChildForm">
+                    <label for="parentCedula">Cédula del Padre/Madre:</label>
+                    <select id="parentCedula" name="parentCedula"></select><br>
+                    <label for="hijoCedula">Cédula:</label>
+                    <input type="text" id="hijoCedula" name="hijoCedula" required><br>
+                    <label for="hijoNombre">Nombres:</label>
+                    <input type="text" id="hijoNombre" name="hijoNombre" required><br>
+                    <label for="edadHijo">Edad:</label>
+                    <input type="text" id="edadHijo" name="edadHijo" required><br>
+                    
+                    <button type="submit">Agregar Hijo</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+
+            <!-- FORMULARIO 3-->
+            <!-- agrego los campospara ingresar citas medicas-->
+            <div class="form2">
+                <h2>Agendar Cita Médica</h2>
+                <form id="scheduleAppointmentForm">
+                    <label for="personCedula">Cédula de la Persona:</label>
+                    <select id="personCedula" name="personCedula"></select><br>
+                    <label for="fecha_cita">Fecha:</label>
+                    <input type="date" id="fecha_cita" name="fecha_cita" required><br>
+                    <label for="hora_cita">Hora para la cita:</label>
+                    <input type="time" id="hora_cita" name="hora_cita"><br>
+                    <button type="submit">Agendar Cita</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ******************************************************** -->
+    <!--SECCION DONDE SE VIZUALIZA LA INFORMACION-->
+    <!-- ******************************************************** -->
+
+
+    <div id="Visualizacion" class="tabcontent">
+        <h2>Visualización</h2>
+        
+        
+        <!-- FORMULARIO 1-->
+         <!-- selecciono en un combo box que es lo que quiero ver-->
+        <label for="seleccion">Seleccione una opción:</label>
+        <select id="seleccion">
+            <option value="personas">Ver Personas</option>
+            <option value="hijos">Ver Hijos de Personas</option>
+            <option value="citas">Ver Citas Agendadas</option>
+        </select>
+
+        <div id="tablaContainer">
+            
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
