@@ -1,0 +1,26 @@
+#main {
+    width: 100%;
+    padding: 1%;
+    border: 1px solid #ada2a2;
+    display: flex;
+  }
+  
+  #main div {
+    padding: auto;
+    flex-basis: 100%;
+  }
+  
+  #main div:nth-of-type(1) {
+      flex-shrink: 4;
+  }
+  
+  #secciones {
+    display: flex;
+  }
+  #secciones div {
+    flex-basis: 100%;
+  }
+  #secciones div:nth-of-type(2) {
+      
+    flex-shrink: 16;
+  }
