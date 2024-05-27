@@ -6,7 +6,7 @@ const cargarDatosInput = document.getElementById('cargar-datos');
 
 let indicePersonaActual = null;
 
-/*
+
 // Evento para manejar el envío del formulario
 formPersona.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -87,17 +87,14 @@ function eliminarPersona(index) {
 }
 
 // Función para descargar los datos como un archivo JSON
-async function descargarDatosComoJSON() {
-    const personas = JSON.parse(localStorage.getItem('personas')) || [];
+function descargarDatosComoJSON() {
+    const personas = JSON.parse(sessionStorage.getItem('personas')) || [];
     const blob = new Blob([JSON.stringify(personas, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url;
+    a.href = URL.createObjectURL(blob);
     a.download = 'personas.json';
-    document.body.appendChild(a);
     a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    URL.revokeObjectURL(a.href);
 }
 
 // Función para cargar datos desde un archivo JSON
@@ -122,7 +119,7 @@ cargarDatosInput.addEventListener('change', cargarDatosDesdeJSON);
 // Mostrar personas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarPersonas);
 
-*/
+/*
 
 // ******************************************************************************* 
 
@@ -245,3 +242,4 @@ cargarDatosInput.addEventListener('change', cargarDatosDesdeJSON);
 
 // Mostrar personas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarPersonas);
+*/
