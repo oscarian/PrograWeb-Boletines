@@ -6,7 +6,7 @@ const cargarDatosInput = document.getElementById('cargar-datos');
 
 let indicePersonaActual = null;
 
-
+/*
 // Evento para manejar el envío del formulario
 formPersona.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -122,7 +122,7 @@ cargarDatosInput.addEventListener('change', cargarDatosDesdeJSON);
 // Mostrar personas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarPersonas);
 
-/*
+*/
 
 // ******************************************************************************* 
 
@@ -245,5 +245,3 @@ cargarDatosInput.addEventListener('change', cargarDatosDesdeJSON);
 
 // Mostrar personas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarPersonas);
-
-*/
