@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información del Proyecto</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="cabecera">
+        <a href="index.html" class="btn btn-primary">Volver</a>
+    </div>
+    
     <div class="container">
         <h1 class="mt-5">Información de la Práctica</h1>
         <p>La práctica consta de las siguietes partes</p>
@@ -20,8 +24,21 @@
             <li><strong>Guardar Datos:</strong> Este botón es para guardar todos los registros que se encuentran en el localStorage a un archivo .json externo, puedo crear un nuevo documento .json o reemplazar el archivo "personas.json" que ya existe en la carpeta del proyecto.</li>
             <li><strong>Cargar Datos:</strong> Botón útil para cargar los datos desde un archivo .json externo al localStorage, una vez los datos estén en el localStorage se imprimirán en la pantalla del navegador.</li>
             <li><strong>Eliminar:</strong> Este botón está alado de cada registro para poder eliminarlo.</li>
+            <li><strong>Modificar:</strong> Este botón modifica un registro existente.</li>
         </ul>
-        <a href="index.html" class="btn btn-primary">Volver</a>
+        <h3>Uso de localStorage y sessionStorage:</h3>
+        <p>Cuándo uso localStorage y cierro la pestaña o ventana de la pagina al volver a abrir la pagina los registros de las personas se mantiennen tal cual estaban antes de cerrar.</p>
+        <p>localStorage antes de cerrar la pestaña:</p>
+        <img src="../7 javaScript 3 mantenimiento personas/img/localStorage1.jpg">
+        <p>localStorage despues de cerrar la pestaña:.</p>
+        <img src="../7 javaScript 3 mantenimiento personas/img/localStorage2.jpg">
+
+        <p>Cuándo uso sessionStorage y cierro la pestaña o ventana de la pagina al volver a abrir la pagina la variable sessionStorage se encuentra vacia.</p>
+        <p>localStorage antes de cerrar la pestaña:</p>
+        <img src="../7 javaScript 3 mantenimiento personas/img/localStorage1.jpg">
+        <p>localStorage despues de cerrar la pestaña:.</p>
+        <img src="../7 javaScript 3 mantenimiento personas/img/localStorage2.jpg">
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
