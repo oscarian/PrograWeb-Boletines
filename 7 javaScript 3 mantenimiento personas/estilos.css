@@ -1,0 +1,67 @@
+body {
+    background-color: #ffffff;
+    
+}
+
+h1, h2 {
+    color: #343a40;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-success {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn:hover{
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-info {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 15px;
+    
+}
+
+.cabecera{
+    background-color: #ddf1fa;
+}
+
+.info-button {
+    padding:  20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.info-button i {
+    margin-right: 15px;
+}
+
+.info-button:hover {
+    
+    font-size: 17px;
+    transition-duration: 500ms;
+}
