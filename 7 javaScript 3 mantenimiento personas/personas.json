@@ -8,5 +8,20 @@
     "nombre": "andres",
     "apellido": "Erreis",
     "edad": "13"
+  },
+  {
+    "nombre": "Oscar",
+    "apellido": "Merino",
+    "edad": "27"
+  },
+  {
+    "nombre": "Laura",
+    "apellido": "Cueva",
+    "edad": "24"
+  },
+  {
+    "nombre": "Justin",
+    "apellido": "Maldonado",
+    "edad": "21"
   }
 ]

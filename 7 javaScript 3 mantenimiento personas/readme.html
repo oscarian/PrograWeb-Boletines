@@ -13,30 +13,41 @@
     </div>
     
     <div class="container">
-        <h1 class="mt-5">Información de la Práctica</h1>
-        <p>La práctica consta de las siguietes partes</p>
-        <p>- Al momento de cargar la pagina si hay algún registro en el localStorage se mostrarán dichos registos en la parte de "Lista de personas"</p>
-        <p>- Si no hay ningún registro en el localStorage, se podrá cargar los registros desde el computador, eligiendo un archivo .json </p>
-        <p>- Se podrá agregar nuevos registros de personas, estos se mantendrán en el loscalStorage, en caso de querer guardar los registros en un archivo jason se debera presionar el bot´pn guardar.</p>
+        <h1 class="mt-5">Detalles de la Práctica</h1>
+        <hr></hr>
+        <p>- Al momento de cargar la pagina lo primero que se muestra es un formulario para agregar una persona nueva."</p>
+        <p>- Antes de agregar la persona se deberá escoger si queire que esta sea almacenada en <b>localStorage</b> ó <b>sessionStorage</b> </p>
+        <p>- Otra opción tambien es cargar registros desde un archivo .json (existe uno en la carpeta del proyecto llamado "personas.json").</p>
+        <hr></hr>
         <h3>Botones:</h3>
         <ul>  
             <li><strong>Agregar Persona:</strong> Este botón es para agregar a una persona. Este nuevo registro estará en el localStorage mas no en el archivo .json</li>
-            <li><strong>Guardar Datos:</strong> Este botón es para guardar todos los registros que se encuentran en el localStorage a un archivo .json externo, puedo crear un nuevo documento .json o reemplazar el archivo "personas.json" que ya existe en la carpeta del proyecto.</li>
-            <li><strong>Cargar Datos:</strong> Botón útil para cargar los datos desde un archivo .json externo al localStorage, una vez los datos estén en el localStorage se imprimirán en la pantalla del navegador.</li>
+            <li><strong>Cargar Datos:</strong> Botón útil para cargar los datos desde un archivo .json externo, cuando se carguen los datos estos de guradarán en el localStorage, y si es que hay otros registros en el localStorage se sobreescribirán.</li>
+            <li><strong>Guardar Datos:</strong> Este botón es para guardar todos los registros que se encuentran en el localStorage a un archivo .json externo.</li>
+            <li><strong>Mostrar LocalStorage:</strong> Este botón imprime en pantalla lo que se encuentra en el momento actual en el localStorage.</li>
+            <li><strong>Mostrar SessionStorage:</strong> Este botón imprime en pantalla lo que se encuentra en el momento actual en el sessionStorage.</li>
             <li><strong>Eliminar:</strong> Este botón está alado de cada registro para poder eliminarlo.</li>
             <li><strong>Modificar:</strong> Este botón modifica un registro existente.</li>
         </ul>
-        <h3>Uso de localStorage y sessionStorage:</h3>
-        <p>Cuándo uso localStorage y cierro la pestaña o ventana de la pagina al volver a abrir la pagina los registros de las personas se mantiennen tal cual estaban antes de cerrar.</p>
-        <p>localStorage antes de cerrar la pestaña:</p>
+        <h3>Diferencias entre el uso de localStorage y sessionStorage:</h3>
+        <p>Cuándo uso localStorage y cierro la pestaña o ventana de la pagina al volver a abrir la pagina los registros de las personas se mantienen tal cual estaban antes de cerrar.</p>
+        <ul>  
+            <li><b>localStorage</b> antes de cerrar la pestaña:</li>
+        </ul>
         <img class="imgs" src="../7 javaScript 3 mantenimiento personas/img/localStorage1.jpg">
-        <p>localStorage despues de cerrar la pestaña:.</p>
+        <ul>  
+            <li><b>localStorage</b> después de cerrar la pestaña:</li>
+        </ul>
         <img class="imgs" src="../7 javaScript 3 mantenimiento personas/img/localStorage2.jpg">
-
+        <p></p>
         <p>Cuándo uso sessionStorage y cierro la pestaña o ventana de la pagina al volver a abrir la pagina la variable sessionStorage se encuentra vacia.</p>
-        <p>sessionStorage antes de cerrar la pestaña:</p>
+        <ul>  
+            <li><b>sessionStorage</b> antes de cerrar la pestaña:</li>
+        </ul>
         <img class="imgs" src="../7 javaScript 3 mantenimiento personas/img/sessionStorage1.jpg">
-        <p>sessionStorage despues de cerrar la pestaña:.</p>
+        <ul>  
+            <li><b>sessionStorage</b> después de cerrar la pestaña:</li>
+        </ul>
         <img class="imgs" src="../7 javaScript 3 mantenimiento personas/img/sessionStorage2.jpg">
         
     </div>

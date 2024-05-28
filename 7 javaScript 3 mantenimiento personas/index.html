@@ -14,33 +14,57 @@
             <i class="fas fa-info-circle"></i> Readme
         </a>
     </div>
-    
+    <h1 class="mt-5">Mantenimiento de Personas</h1>
     <div class="container">
         
-        <h1 class="mt-5">Mantenimiento de Personas</h1>
-        <form id="form-persona" class="mt-4">
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input type="text" class="form-control" id="apellido" required>
-            </div>
-            <div class="form-group">
-                <label for="edad">Edad</label>
-                <input type="number" class="form-control" id="edad" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Agregar Persona</button>
-        </form>
-        <div class="mt-4">
-            <button id="guardar-datos" class="btn btn-success">Guardar Datos</button>
-            <input type="file" id="cargar-datos" class="btn btn-secondary" style="display: none;">
-            <label for="cargar-datos" class="btn btn-secondary mb-0">Cargar Datos</label>
+
+        <div class="form-section">
+            <form id="form-persona" class="mt-4">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" class="form-control" id="edad" required>
+                </div>
+                <div class="form-group">
+                    <h5>Escoger el almacenamiento:</h5>
+                    <div>
+                        <input type="radio" id="local" name="storage" value="local" required>
+                        <label for="local">LocalStorage</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="session" name="storage" value="session">
+                        <label for="session">SessionStorage</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar Persona</button>
+                <div id="mensaje"></div>
+            </form>
         </div>
         <hr>
-        <h2>Lista de Personas</h2>
-        <ul id="lista-personas" class="list-group mt-4"></ul>
+        
+            <div class="buttons-row">
+                
+                <input type="file" id="cargar-datos" class="custom-file-input" style="display: none;">
+                <button id="cargar-datos-btn" class="btn btn-secondary">Cargar Datos</button>
+                <button id="guardar-datos" class="btn btn-secondary">Descargar .json</button>
+                
+            </div>
+        <hr>
+        <div class="list-section">
+            <h2>Lista de Personas</h2>
+            <div class="buttons-row">
+                <button id="mostrar-local" class="btn btn-secondary">Mostrar LocalStorage</button>
+                <button id="mostrar-session" class="btn btn-secondary">Mostrar SessionStorage</button>
+            </div>
+            <ul id="lista-personas" class="list-group mt-4"></ul>
+        </div>
         <hr>
     </div>
 
